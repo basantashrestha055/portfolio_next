@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { toast } from 'sonner';
 import { TbLoader2 } from 'react-icons/tb';
 import axios from 'axios';
@@ -40,7 +40,6 @@ const Contact = () => {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const form = useRef();
 
   const handleSendMail = async (e) => {
     e.preventDefault();
@@ -53,7 +52,13 @@ const Contact = () => {
       console.error('Error sending message:', error.message);
       toast.error('Failed to send message. Please try again.');
     } finally {
-      form.current.reset();
+      setFormData({
+        firstname: '',
+        lastname: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
       setIsSubmitting(false);
     }
   };
@@ -72,7 +77,6 @@ const Contact = () => {
           {/* form */}
           <div className='xl:w-[54%] order-2 xl:order-0'>
             <form
-              ref={form}
               onSubmit={handleSendMail}
               className='flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'
             >
