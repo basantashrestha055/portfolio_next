@@ -176,11 +176,54 @@ const projects = [
     id: 5,
     num: '05',
     category: 'Fullstack',
-    title: 'Snapcart [COMING SOON]',
+    title: 'Snapinsta',
     description:
-      'A grocery delivery website with real-time map tracking. The project focuses on real-time location updates and map integration.',
-    stack: [],
-    image: '/assets/coming_soon.jpg',
+      'Snapinsta is a social media application, designed to let users share photos and connect with friends. I focused on creating a simple and intuitive interface while implementing features like user authentication, photo uploads, and real-time updates. This project helped me understand how to build a full-stack application that can handle media content and user interactions effectively.',
+    stack: [
+      {
+        id: 1,
+        name: 'Next.js',
+      },
+      {
+        id: 2,
+        name: 'Typescript',
+      },
+      {
+        id: 3,
+        name: 'Shadcn UI',
+      },
+      {
+        id: 4,
+        name: 'MongoDB',
+      },
+      {
+        id: 5,
+        name: 'Cloudinary',
+      },
+      {
+        id: 6,
+        name: 'NextAuth',
+      },
+      {
+        id: 7,
+        name: 'Zustand',
+      },
+      {
+        id: 8,
+        name: 'Tanstack Query',
+      },
+      {
+        id: 9,
+        name: 'Socket.io',
+      },
+      {
+        id: 10,
+        name: 'Resend',
+      },
+    ],
+    image: '/assets/projects/snapinsta.png',
+    live: 'https://snapinsta-roan.vercel.app/',
+    github: 'https://github.com/basantashrestha055/snapinsta',
   },
 ];
 

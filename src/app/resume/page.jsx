@@ -19,6 +19,7 @@ import {
   SiExpress,
   SiTypescript,
   SiCloudinary,
+  SiResend,
 } from 'react-icons/si';
 
 const about = {
@@ -130,6 +131,11 @@ const skills = {
       id: 12,
       icon: <SiCloudinary />,
       name: 'cloudinary',
+    },
+    {
+      id: 13,
+      icon: <SiResend />,
+      name: 'resend',
     },
   ],
 };
