@@ -55,9 +55,9 @@ const education = {
   items: [
     {
       id: 1,
-      institution: 'Deerwalk Training Center',
+      institution: 'Kodedrishti Software',
       degree: 'Full Stack Web Development',
-      duration: '2021',
+      duration: '2026',
     },
     {
       id: 2,

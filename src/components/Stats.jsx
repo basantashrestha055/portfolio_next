@@ -10,12 +10,12 @@ const stats = [
   },
   {
     id: 2,
-    num: 8,
+    num: 9,
     text: 'Technologies used',
   },
   {
     id: 3,
-    num: 142,
+    num: 159,
     text: 'Code commits',
   },
 ];
